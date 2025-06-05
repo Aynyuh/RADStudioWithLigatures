@@ -1,0 +1,373 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK]
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Additional search match highlight]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FFFEFA"
+"Background Color New"="$00143261"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Assembler]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00D0E3F0"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Attribute Names]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clWhite"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Attribute Values]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clWhite"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Binary]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00AA7FFF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Brace Highlight]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clSilver"
+"Background Color New"="$00C04040"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Character]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00AA7FFF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Code folding tree]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FFFEFA"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Comment]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$004E8B60"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Diff addition]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clBlack"
+"Background Color New"="$0064B5E8"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Diff deletion]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clBlack"
+"Background Color New"="$005870E3"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Diff move]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clBlack"
+"Background Color New"="$00A1BC78"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Disabled break]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00CCE2EE"
+"Background Color New"="$005A5A5A"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Enabled break]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clBlack"
+"Background Color New"="$00FD7373"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Error line]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clWhite"
+"Background Color New"="$00324CCB"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Execution point]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clBlack"
+"Background Color New"="$00508AB1"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Float]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00A8CEB5"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Folded code]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FFFEFA"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Hex]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$0098B45B"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Hot Link]
+"Bold"="False"
+"Italic"="False"
+"Underline"="True"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FF7F2A"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Identifier]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00D4D4D4"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Illegal Char]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clRed"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Invalid break]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00CCE2EE"
+"Background Color New"="$005A5A5A"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Line Highlight]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="True"
+"Default Background"="False"
+"Foreground Color New"="clWhite"
+"Background Color New"="$001C1509"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Line Number]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00858585"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Marked block]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00D4D4D4"
+"Background Color New"="$00784F26"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Modified line]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clLime"
+"Background Color New"="clYellow"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Number]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00A8CEB5"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Octal]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00AA7FFF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Plain text]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FFFEFA"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Preprocessor]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FFCD66"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Reserved word]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00D69C56"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Right margin]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clSilver"
+"Background Color New"="$001C1509"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Scripts]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clRed"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Search match]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="clBlack"
+"Background Color New"="$006A5C51"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\String]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$007891CE"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Symbol]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00F0F9FF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Sync edit background]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="True"
+"Default Background"="False"
+"Foreground Color New"="clWhite"
+"Background Color New"="$00473B35"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Sync edit highlight]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00774B35"
+"Background Color New"="clWhite"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Tags]
+"Bold"="True"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00BCE0FF"
+"Background Color New"="$00322F2D"
+
+[HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\23.0\Editor\Highlight\Custom Themes\MONAKO THEME DARK\Whitespace]
+"Bold"="False"
+"Italic"="False"
+"Underline"="False"
+"Default Foreground"="False"
+"Default Background"="False"
+"Foreground Color New"="$00FFFEFA"
+"Background Color New"="$00322F2D"
+
