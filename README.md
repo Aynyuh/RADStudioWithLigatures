@@ -37,13 +37,13 @@ Below are sample screenshots of how some popular fonts can look in RAD Studio ID
 |BEFORE<br>Ligatures Off 😖|AFTER<br>Ligatures On 🤩|
 |-|-|
 |||
-|Cascadia|Cascadia|
+|[Cascadia Code](https://github.com/microsoft/cascadia-code)|[Cascadia Code](https://github.com/microsoft/cascadia-code)|
 |![](/Screenshots/default-light-off-cascadia.png)<br><p align="center"><sup><i>Cascadia Code, Default colors, Light theme</i></sup></p>|![](/Screenshots/default-light-on-cascadia.png)<br><p align="center"><sup><i>Cascadia Code, Default colors, Light theme</i></sup></p>|
-|FiraCode|FiraCode|
+|[Fira Code](https://github.com/tonsky/FiraCode)|[Fira Code](https://github.com/tonsky/FiraCode)|
 |![](/Screenshots/default-light-off-firacode.png)|![](/Screenshots/default-light-on-firacode.png)|
-|Iosevka|Iosevka|
+|[Iosevka](https://typeof.net/Iosevka/)|[Iosevka](https://typeof.net/Iosevka/)|
 |![](/Screenshots/default-light-off-iosevka.png)|![](/Screenshots/default-light-on-iosevka.png)|
-|Mono|Mono|
+|JetBrains Mono|JetBrains Mono|
 |![](/Screenshots/default-light-off-mono.png)|![](/Screenshots/default-light-on-mono.png)|
 </details>
 <details>
@@ -51,13 +51,13 @@ Below are sample screenshots of how some popular fonts can look in RAD Studio ID
 
 |BEFORE<br>Ligatures Off 😖|AFTER<br>Ligatures On 🤩|
 |-|-|
-|Cascadia|Cascadia|
+|[Cascadia Code](https://github.com/microsoft/cascadia-code)|[Cascadia Code](https://github.com/microsoft/cascadia-code)|
 |![](/Screenshots/default-dark-off-cascadia.png)|![](/Screenshots/default-dark-on-cascadia.png)|
-|FiraCode|FiraCode|
+|[Fira Code](https://github.com/tonsky/FiraCode)|[Fira Code](https://github.com/tonsky/FiraCode)|
 |![](/Screenshots/default-dark-off-firacode.png)|![](/Screenshots/default-dark-on-firacode.png)|
-|Iosevka|Iosevka|
+|[Iosevka](https://typeof.net/Iosevka/)|[Iosevka](https://typeof.net/Iosevka/)|
 |![](/Screenshots/default-dark-off-iosevka.png)|![](/Screenshots/default-dark-on-iosevka.png)|
-|Mono|Mono|
+|JetBrains Mono|JetBrains Mono|
 |![](/Screenshots/default-dark-off-mono.png)|![](/Screenshots/default-dark-on-mono.png)|
 </details>
 
