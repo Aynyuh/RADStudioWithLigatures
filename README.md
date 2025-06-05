@@ -9,11 +9,11 @@
 
 > [!WARNING]
 > - This is a sample code, not a production-ready solution. Please read [Bugs](#known-bugs) section before using this extension.
-> - This addon is developed for RAD Studio Athens 12, and I am not sure whether it works in previous versions or not.
+> - This addon is developed for Embarcadero RAD Studio version 12, and I am not sure whether it works in previous versions or not.
 
 There are multiple free programming fonts created and designed for writing and reading code efficiently. Many of these fonts offer [ligatures](https://en.wikipedia.org/wiki/Ligature_(writing)) to improve symbols appearance, such as [Cascadia Code](https://github.com/microsoft/cascadia-code), [Fira Code](https://github.com/tonsky/FiraCode), [Iosevka](https://typeof.net/Iosevka/), [JetBrains Mono](https://www.jetbrains.com/lp/mono/), and [many more](https://www.programmingfonts.org/).
 
-Unfortunately, RAD Studio editor does not support rendering font ligatures, so even if you install any of the fonts above, you won't see their true value. This add-on is addressed to fix this and move RAD Studio editor one step forward on the long road to excellence.
+Unfortunately, Embarcadero RAD Studio editor does not support rendering font ligatures, so even if you install any of the fonts above, you won't see their true value. This add-on is addressed to fix this and move RAD Studio editor one step forward on the long road to excellence.
 
 The package enhances the RAD Studio editor by utilizing Open Tools API to replace the default font rendering process, enabling it to display ligated characters when the selected font supports them. This code is an adopted version of the sample package from the ToolsAPI [PaintText Event Demo](https://github.com/Embarcadero/RADStudio12Demos/tree/main/Object%20Pascal/ToolsAPI/Editor%20Demos/PaintText%20Event%20Demo). It was created to show just how *incredibly difficult* it is to get ligature-enabled fonts working in the IDE.
 
