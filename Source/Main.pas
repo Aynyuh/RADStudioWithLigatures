@@ -13,10 +13,10 @@ uses
 type
   TIDEWizard = class(TNotifierObject, IOTAWizard)
   private
-    {$IFDEF DEBUG}
+{$IFDEF DEBUG}
     _counter: Integer;
     sw: TStopwatch;
-    {$ENDIF}
+{$ENDIF}
 
     FEditorEventsNotifier: Integer;
     FEditorOptions: INTACodeEditorOptions;
@@ -186,16 +186,26 @@ begin
       if drawRect.Left < gutterWidth then
         drawRect.Left := gutterWidth;
 
-      { TCodeEditorLineState and INTACodeEditorLineState290.CellState exist starting from Athens }
-      {$IFDEF VER360}
+{ TCodeEditorLineState and INTACodeEditorLineState290.CellState exist starting from Athens }
+{$IFDEF VER360}
       // fix "current line" background
       if TCodeEditorLineState.eleLineHighlight in LineState.State then
+      begin
+        Canvas.Font.Color := FEditorOptions.FontColor[SyntaxCode];
         Canvas.Brush.Color := FEditorOptions.BackgroundColor[atLineHighlight];
+      end;
+
+      if TCodeEditorCellState.eceSearchMatch in lineState.CellState[ColNum] then
+      begin
+        Canvas.Font.Color := FEditorOptions.FontColor[SearchMatch];
+        Canvas.Font.Style := FEditorOptions.FontStyles[SearchMatch];
+        Canvas.Brush.Color := FEditorOptions.BackgroundColor[SearchMatch];
+      end;
 
       // draw unabled code correctly
       if TCodeEditorCellState.eceDisabledCode in lineState.CellState[ColNum] then
         Canvas.Font.Color := ColorLighter(Canvas.Font.Color);
-      {$ENDIF}
+{$ENDIF}
     end;
 
     Canvas.FillRect(drawRect);
