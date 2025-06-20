@@ -91,7 +91,7 @@ I prefer [Monaco Editor](https://microsoft.github.io/monaco-editor/) over the de
 
 ## Known Bugs
 - [ ] Color SpeedSetting doesn't display selected color scheme in editor's options dialog
-- [ ] Highlighting the same words sometimes works incorrectly
+- [x] ~~Highlighting the same words sometimes works incorrectly~~
 - [ ] There are glitches with rendering some fonts (Lucida Console)
 
 ## Further improvements
