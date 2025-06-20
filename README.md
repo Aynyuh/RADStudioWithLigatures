@@ -90,6 +90,7 @@ I prefer [Monaco Editor](https://microsoft.github.io/monaco-editor/) over the de
 </details>
 
 ## Known Bugs
+- [ ] Inactive code paints incorrectly in dark themes
 - [ ] Color SpeedSetting doesn't display selected color scheme in editor's options dialog
 - [x] ~~Highlighting the same words sometimes works incorrectly~~
 - [ ] There are glitches with rendering some fonts (Lucida Console)
