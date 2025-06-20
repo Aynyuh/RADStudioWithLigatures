@@ -10,6 +10,7 @@
 > [!WARNING]
 > - This is a sample code, not a production-ready solution. Please read [Bugs](#known-bugs) section before using this extension.
 > - This addon is developed for Embarcadero RAD Studio version 12, and I am not sure whether it works in previous versions or not.
+>     - UPD. Addon works in Alexandria, but it doesn't draw a disabled code inside `IFDEF-ENDIF` due to a lack of necessary interfaces.
 
 There are multiple free programming fonts created and designed for writing and reading code efficiently. Many of these fonts offer [ligatures](https://en.wikipedia.org/wiki/Ligature_(writing)) to improve symbols appearance, such as [Cascadia Code](https://github.com/microsoft/cascadia-code), [Fira Code](https://github.com/tonsky/FiraCode), [Iosevka](https://typeof.net/Iosevka/), [JetBrains Mono](https://www.jetbrains.com/lp/mono/), and [many more](https://www.programmingfonts.org/).
 
