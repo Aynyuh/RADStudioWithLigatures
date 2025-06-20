@@ -171,7 +171,12 @@ begin
     var drawRect := Rect;
     var Canvas := Context.Canvas;
 
-    // Context.LineState = nil in Options dialog at least in Alexandria
+    // setup correct colors and style
+    Canvas.Brush.Color := FEditorOptions.BackgroundColor[SyntaxCode];
+    Canvas.Font.Color := FEditorOptions.FontColor[SyntaxCode];
+    Canvas.Font.Style := FEditorOptions.FontStyles[SyntaxCode];
+
+    // NOTE: LineState == nil in Options dialog, at least in Alexandria
     if Context.LineState <> nil then
     begin
       var lineState := Context.LineState;
@@ -181,18 +186,17 @@ begin
       if drawRect.Left < gutterWidth then
         drawRect.Left := gutterWidth;
 
-      { INTACodeEditorLineState290.CellState was added in Athens }
+      { TCodeEditorLineState and INTACodeEditorLineState290.CellState exist starting from Athens }
       {$IFDEF VER360}
-      // draw diabled code correctly
-      if eceDisabledCode in lineState.CellState[ColNum] then
+      // fix "current line" background
+      if TCodeEditorLineState.eleLineHighlight in LineState.State then
+        Canvas.Brush.Color := FEditorOptions.BackgroundColor[atLineHighlight];
+
+      // draw unabled code correctly
+      if TCodeEditorCellState.eceDisabledCode in lineState.CellState[ColNum] then
         Canvas.Font.Color := ColorLighter(Canvas.Font.Color);
       {$ENDIF}
     end;
-
-    // setup correct colors and style
-    Canvas.Brush.Color := FEditorOptions.BackgroundColor[SyntaxCode];
-    Canvas.Font.Color := FEditorOptions.FontColor[SyntaxCode];
-    Canvas.Font.Style := FEditorOptions.FontStyles[SyntaxCode];
 
     Canvas.FillRect(drawRect);
 
