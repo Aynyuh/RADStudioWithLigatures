@@ -7,8 +7,8 @@ procedure Register;
 implementation
 
 uses
-  System.SysUtils, Winapi.Windows, ToolsAPI, ToolsAPI.Editor, System.Diagnostics, System.UITypes,
-  System.Math, Vcl.Graphics;
+  System.SysUtils, Winapi.Windows, ToolsAPI, ToolsAPI.Editor, System.Math, Vcl.Graphics,
+  Vcl.Controls {$IFDEF DEBUG}, System.Diagnostics{$ENDIF};
 
 type
   TIDEWizard = class(TNotifierObject, IOTAWizard)
@@ -20,13 +20,16 @@ type
 
     FEditorEventsNotifier: Integer;
     FEditorOptions: INTACodeEditorOptions;
+    FLightStyle: Boolean;
 
+    procedure BeginPaintEditor(const Editor: TWinControl; const ForceFullRepaint: Boolean);
     procedure PaintText(const Rect: TRect; const ColNum: SmallInt; const Text: string;
       const SyntaxCode: TOTASyntaxCode; const Hilight, BeforeEvent: Boolean;
       var AllowDefaultPainting: Boolean; const Context: INTACodeEditorPaintContext);
   protected
     function DrawTextLigated(ACanvas: HDC; const AText: string; const ARect: TRect): Boolean;
     function ColorLighter(Color: TColor; Percent: Byte = 70): TColor;
+    function DimColor(Color: TColor; Percent: Byte): TColor;
   public
     constructor Create;
     destructor Destroy; override;
@@ -56,11 +59,17 @@ end;
 
 { TIDEWizard }
 
+procedure TIDEWizard.BeginPaintEditor(const Editor: TWinControl;
+  const ForceFullRepaint: Boolean);
+begin
+  FLightStyle := Editor.IsLightStyleColor(clWindow);
+end;
+
 function TIDEWizard.ColorLighter(Color: TColor; Percent: Byte): TColor;
 var
   R, G, B: Byte;
 begin
-//  Color := ColorToRGB(Color);
+  Color := ColorToRGB(Color);
   R := GetRValue(Color);
   G := GetGValue(Color);
   B := GetBValue(Color);
@@ -74,21 +83,38 @@ begin
   Result := RGB(R, G, B);
 end;
 
+function ColorDarker(Color: TColor; Percent: Byte = 70): TColor;
+var
+  R, G, B: Byte;
+begin
+  Color := ColorToRGB(Color);
+  R := GetRValue(Color);
+  G := GetGValue(Color);
+  B := GetBValue(Color);
+
+  R := R - Ceil(R * Percent / 100);
+  G := G - Ceil(G * Percent / 100);
+  B := B - Ceil(B * Percent / 100);
+
+  Result := RGB(R, G, B);
+end;
+
 constructor TIDEWizard.Create;
 begin
   inherited;
-  var LNotifier := TCodeEditorNotifier.Create;
+
+  var LCodeEditorNotifier := TCodeEditorNotifier.Create;
+  LCodeEditorNotifier.OnEditorBeginPaint := BeginPaintEditor;
+  LCodeEditorNotifier.OnEditorPaintText := PaintText;
 
   var LEditorServices: INTACodeEditorServices;
   if Supports(BorlandIDEServices, INTACodeEditorServices, LEditorServices) then
     begin
-      FEditorEventsNotifier := LEditorServices.AddEditorEventsNotifier(LNotifier);
+      FEditorEventsNotifier := LEditorServices.AddEditorEventsNotifier(LCodeEditorNotifier);
       FEditorOptions := LEditorServices.Options;
     end
   else
     FEditorEventsNotifier := -1;
-
-  LNotifier.OnEditorPaintText := PaintText;
 
   {$IFDEF DEBUG}
   sw := TStopwatch.Create;
@@ -102,6 +128,14 @@ begin
     (FEditorEventsNotifier <> -1) and Assigned(LEditorServices) then
     LEditorServices.RemoveEditorEventsNotifier(FEditorEventsNotifier);
   inherited;
+end;
+
+function TIDEWizard.DimColor(Color: TColor; Percent: Byte): TColor;
+begin
+  if FLightStyle then
+    Result := ColorLighter(Color, Percent)
+  else
+    Result := ColorDarker(Color, Percent);
 end;
 
 function TIDEWizard.DrawTextLigated(ACanvas: HDC; const AText: string;
@@ -171,15 +205,18 @@ begin
     var drawRect := Rect;
     var Canvas := Context.Canvas;
 
-    // setup correct colors and style
-    Canvas.Brush.Color := FEditorOptions.BackgroundColor[SyntaxCode];
-    Canvas.Font.Color := FEditorOptions.FontColor[SyntaxCode];
-    Canvas.Font.Style := FEditorOptions.FontStyles[SyntaxCode];
-
     // NOTE: LineState == nil in Options dialog, at least in Alexandria
     if Context.LineState <> nil then
     begin
       var lineState := Context.LineState;
+
+      // setup correct colors and style
+      if not (TCodeEditorLineState.eleLineHighlight in Context.LineState.State) then
+      begin
+        Canvas.Brush.Color := FEditorOptions.BackgroundColor[SyntaxCode];
+        Canvas.Font.Color := FEditorOptions.FontColor[SyntaxCode];
+        Canvas.Font.Style := FEditorOptions.FontStyles[SyntaxCode];
+      end;
 
       // adjust text rect if it's behind the gutter
       var gutterWidth := lineState.GutterRect.Width + lineState.GutterLineDataRect.Width;
@@ -188,13 +225,6 @@ begin
 
 { TCodeEditorLineState and INTACodeEditorLineState290.CellState exist starting from Athens }
 {$IFDEF VER360}
-      // fix "current line" background
-      if TCodeEditorLineState.eleLineHighlight in LineState.State then
-      begin
-        Canvas.Font.Color := FEditorOptions.FontColor[SyntaxCode];
-        Canvas.Brush.Color := FEditorOptions.BackgroundColor[atLineHighlight];
-      end;
-
       if TCodeEditorCellState.eceSearchMatch in lineState.CellState[ColNum] then
       begin
         Canvas.Font.Color := FEditorOptions.FontColor[SearchMatch];
@@ -204,7 +234,7 @@ begin
 
       // draw unabled code correctly
       if TCodeEditorCellState.eceDisabledCode in lineState.CellState[ColNum] then
-        Canvas.Font.Color := ColorLighter(Canvas.Font.Color);
+        Canvas.Font.Color := DimColor(Canvas.Font.Color, 70);
 {$ENDIF}
     end;
 
@@ -235,7 +265,7 @@ end;
 
 function TCodeEditorNotifier.AllowedEvents: TCodeEditorEvents;
 begin
-  Result := [cevPaintTextEvents];
+  Result := [cevPaintTextEvents, cevBeginEndPaintEvents];
 end;
 
 end.
