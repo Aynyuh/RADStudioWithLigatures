@@ -25,6 +25,8 @@ package EditorLigatures;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'RADStudioWithLigatures'}
+{$DESIGNONLY}
 {$IMPLICITBUILD ON}
 
 requires
