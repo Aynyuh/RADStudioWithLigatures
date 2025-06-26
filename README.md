@@ -90,6 +90,7 @@ I prefer [Monaco Editor](https://microsoft.github.io/monaco-editor/) over the de
 </details>
 
 ## Known Bugs
+- [ ] Line drawing broken when non-ASCII characters appear in it. This is an error deep in OTAPI's `PaintText` function related to the misinterpretation of Unicode strings.
 - [x] ~~Inactive code is painted incorrectly with dark theme~~
 - [ ] Color SpeedSetting doesn't display selected color scheme in editor's options dialog
 - [x] ~~Highlighting the same words sometimes works incorrectly~~
